@@ -1,6 +1,60 @@
-/*Selecciona el cuerpo de la página*/
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    background-image:url("../assets/images/kitchen-1940174_1920.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+    /*configuración color, fuente*/
+    color:#171616;
+    font-weight:bold;
 
+.titulo{
+    backdrop-filter:blur(15px); /*desemfoque*/
+    background-color:rgb(255,255,255,0.1);
+    border-radius:10px;   /*esquinas redondeadas*/
+    margin:10px; /*espacio externo*/
+    padding:10px;   /*espacio interno*/
+    width:fit-content; /*se ajusta al contenido*/
+    max-width: 400px; /*ancho maximo*/    
+    /*borde sutil*/
+    border: 5px solid rgba(255, 255, 255, 0.2);
+
+    position:relative;
+    top:10px;
+    left:550px;
+}
+
+.cont_ingredientes{
+    backdrop-filter:blur(15px); /*desemfoque*/
+    background-color:rgb(255,255,255,0.1);
+    border-radius:10px;   /*esquinas redondeadas*/
+    margin:10px; /*espacio externo*/
+    padding:10px;   /*espacio interno*/
+    width:fit-content; /*se ajusta al contenido*/
+    max-width: 400px; /*ancho maximo*/    
+    /*borde sutil*/
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    position:relative;
+    top:10px;
+    left:500px;
+}
+
+
+
+.cont_section_2{
+    backdrop-filter:blur(10px);
+    background-color:rgb(255,255,255,0.1);
+    border-radius:10px;   /*esquinas redondeadas*/
+    margin:10px; /*espacio externo*/
+    padding:10px;   /*espacio interno*/
+    width:fit-content; /*se ajusta al contenido*/
+    max-width: 400px; /*ancho maximo*/    
+    /*borde sutil*/
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    position:relative;
+    top:10px;
+    left:450px;
 
 }
+}
+
