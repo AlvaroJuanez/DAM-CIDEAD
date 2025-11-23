@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <!-- Define el juego de caracteres UTF-8 para permitir acentos y ñ -->
+        <meta charset="UTF-8">
+        <!-- Viewport: Hace que la web sea "Responsive" (se adapte a móviles y tablets) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <title>Warhammer 40,000 - En la oscuridad del futuro lejano</title>
+
+    </head>
+    <!-- BODY: Aquí empieza todo el contenido visible para el usuario -->
+<body>
+
+    <!-- Header: Cabecera semántica del sitio -->
+    <header>
+        <h1>Warhammer 40,000</h1>
+        <p>En la oscuridad del futuro lejano, solo hay guerra.</p>
+    </header>
+
+    <!-- Nav: Barra de navegación semántica -->
+    <nav>
+        <!-- Enlaces internos (anclas) que llevan a secciones con ID específico -->
+        <a href="#intro">Introducción</a>
+        <a href="#factions">Facciones</a>
+        <a href="#gallery">Galería</a>
+        <a href="#info">Más Info</a>
+    </nav>
+
+    <!-- Main: Contenedor principal del contenido único de esta página -->
+    <main>
+        
+        <!-- Section: Agrupa contenido temático. ID="intro" sirve para el enlace del menú -->
+        <section id="intro">
+            <h2>El Universo del 41.º Milenio</h2>
+            <p>
+                Warhammer 40k es un juego de guerra de miniaturas de mesa producido por Games Workshop, ambientado en un futuro distópico de ciencia ficción. 
+                La humanidad se ha extendido por la galaxia, pero está asediada por alienígenas, traidores y las fuerzas demoníacas del Caos.
+            </p>
+            <p>
+                El juego combina recolección, pintura de miniaturas y estrategia táctica. Es conocido por su lore profundo, estética gótica y escala masiva.
+            </p>
+        </section>
+
+        <!-- Sección de la Tabla de contenidos -->
+        <section id="factions">
+            <h2>Principales Facciones y Estilos</h2>
+            
+            <!-- Table: Elemento para mostrar datos tabulados -->
+            <table>
+                <!-- Thead: Cabecera de la tabla -->
+                <thead>
+                    <tr>
+                        <th>Facción</th> <!-- th: Celda de cabecera (negrita por defecto) -->
+                        <th>Alineación</th>
+                        <th>Estilo de Juego</th>
+                    </tr>
+                </thead>
+                <!-- Tbody: Cuerpo de la tabla con los datos -->
+                <tbody>
+                    <tr>
+                        <td>Space Marines</td> <!-- td: Celda de datos estándar -->
+                        <td>Imperium</td>
+                        <td>Élite, Versátil, Resistente</td>
+                    </tr>
+                    <tr>
+                        <td>Necrons</td>
+                        <td>Xenos</td>
+                        <td>Lentos, Regeneración, Disparo fuerte</td>
+                    </tr>
+                    <tr>
+                        <td>Orks</td>
+                        <td>Xenos</td>
+                        <td>Horda, Combate cuerpo a cuerpo, Azar</td>
+                    </tr>
+                    <tr>
+                        <td>Chaos Space Marines</td>
+                        <td>Chaos</td>
+                        <td>Agresivo, Magia oscura, Élite corrupta</td>
+                    </tr>
+                    <tr>
+                        <td>Astra Militarum</td>
+                        <td>Imperium</td>
+                        <td>Tanques masivos, Infantería numerosa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de Galería -->
+        <section id="gallery">
+            <h2>Miniaturas y Arte</h2>
+            <!-- Div contenedor con clase para aplicar Grid CSS -->
+            <div class="gallery-grid">
+                
+                <!-- Figure: Etiqueta semántica para imágenes con pie de foto -->
+                <figure class="gallery-item">
+                    <!-- Img: Carga la imagen. 'alt' es obligatorio para accesibilidad -->
+                    <img src="https://placehold.co/400x300/222222/d4af37?text=Space+Marine" alt="Space Marine">
+                    <!-- Figcaption: Pie de foto semántico asociado a la imagen -->
+                    <figcaption>Adeptus Astartes</figcaption>
+                </figure>
+                
+                <figure class="gallery-item">
+                    <img src="https://placehold.co/400x300/331111/ff0000?text=Chaos+Demon" alt="Chaos Demon">
+                    <figcaption>Fuerzas del Caos</figcaption>
+                </figure>
+                
+                <figure class="gallery-item">
+                    <img src="https://placehold.co/400x300/003300/00ff00?text=Ork+Waaagh" alt="Ork">
+                    <figcaption>Ork Boyz</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sección de Enlaces Externos -->
+        <section id="info">
+            <h2>Recursos Externos</h2>
+            <p>Si quieres aprender más sobre el lore o comprar miniaturas, visita:</p>
+
+            <!-- ul: Lista desordenada (con puntos) -->
+            <ul>
+                <!-- li: Elemento de la lista -->
+                <!-- target="_blank": Abre el enlace en una pestaña nueva -->
+                <li><a href="https://www.warhammer-community.com/" target="_blank">Warhammer Community (Oficial)</a></li>
+                <li><a href="https://wh40k.lexicanum.com/wiki/Main_Page" target="_blank">Lexicanum (Wiki de Lore)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer: Pie de página semántico (Copyright, contacto, etc.) -->
+    <footer>
+        <!-- &copy; es el código HTML para el símbolo de copyright © -->
+        <p>&copy; 2025 Fan Page de Warhammer 40k. Sitio no oficial.</p>
+        <p>Ver en <a href="https://www.imdb.com/title/tt16150436/" target="_blank">IMDB la serie de Henry Cavill</a></p>
+    </footer>
+
+</body>
+</html>
