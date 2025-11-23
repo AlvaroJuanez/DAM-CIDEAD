@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><!--metadatos-->
+    <!--scalado de contenido en dispositivos moviles,pc,tablets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--enlace a una hoja css externa para evitar codigo espagueti-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Inscripción Taller</title>
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h2>Inscripción al Taller</h2>
+        
+        <form id="miFormulario">
+            
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <div class="campo">
+                <label for="taller">Selecciona el Taller:</label>
+                <select id="taller" name="taller">
+                    <option value="fotografia">Fotografía Digital</option>
+                    <option value="programacion">Programación Web</option>
+                    <option value="cocina">Cocina Creativa</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="horario">Horario:</label>
+                <select id="horario" name="horario">
+                    <option value="manana">Mañana (9:00-13:00)</option>
+                    <option value="tarde">Tarde (16:00-20:00)</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Nivel de experiencia:</label>
+                <div class="radio-group">
+                    <input type="radio" id="principiante" name="nivel" value="principiante" checked>
+                    <label for="principiante">Principiante</label>
+
+                    <input type="radio" id="intermedio" name="nivel" value="intermedio">
+                    <label for="intermedio">Intermedio</label>
+
+                    <input type="radio" id="avanzado" name="nivel" value="avanzado">
+                    <label for="avanzado">Avanzado</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Material adicional necesario:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="camara" name="materiales" value="camara">
+                    <label for="camara">Alquiler de cámara</label><br>
+                    
+                    <input type="checkbox" id="cuaderno" name="materiales" value="cuaderno">
+                    <label for="cuaderno">Cuaderno de notas</label><br>
+                    
+                    <input type="checkbox" id="software" name="materiales" value="software">
+                    <label for="software">Acceso a software</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="comentarios">Comentarios:</label><!---->
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+
+            <div class="botones">
+                <button type="reset" class="btn-borrar">Borrar formulario</button>
+                <button type="button" class="btn-enviar" onclick="enviarInscripcion()">Enviar inscripción</button>
+            </div>
+
+        </form>
+    </div>
+    <!--enlace externo .js-->
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
